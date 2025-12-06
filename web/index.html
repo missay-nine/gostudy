@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>五子棋 - 人机对战</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="page">
+        <header class="header">
+            <h1>五子棋 · 人机对战</h1>
+            <p class="subtitle">点击棋盘落子，你执 X，AI 执 O。</p>
+        </header>
+
+        <section class="board-wrapper">
+            <div id="board" class="board" role="grid" aria-label="Gomoku board"></div>
+            <div class="side-panel">
+                <p id="status" class="status">轮到你落子</p>
+                <button id="reset" class="button" type="button">重新开始</button>
+                <ul class="tips">
+                    <li>连续 5 子即可获胜。</li>
+                    <li>AI 会尝试获胜、阻挡和贴近已有棋子。</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
